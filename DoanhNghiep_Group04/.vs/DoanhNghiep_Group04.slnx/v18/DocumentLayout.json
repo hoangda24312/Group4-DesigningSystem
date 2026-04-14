@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\PhanTichThietKe\\DoanhNghiep_Group04\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD0C80C-5ED4-4BB5-AA91-5E033E66472B}|DoanhNghiep_Group04\\DoanhNghiep_Group04.csproj|d:\\project\\phantichthietke\\doanhnghiep_group04\\doanhnghiep_group04\\data\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD0C80C-5ED4-4BB5-AA91-5E033E66472B}|DoanhNghiep_Group04\\DoanhNghiep_Group04.csproj|solutionrelative:doanhnghiep_group04\\data\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD0C80C-5ED4-4BB5-AA91-5E033E66472B}|DoanhNghiep_Group04\\DoanhNghiep_Group04.csproj|d:\\project\\phantichthietke\\doanhnghiep_group04\\doanhnghiep_group04\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD0C80C-5ED4-4BB5-AA91-5E033E66472B}|DoanhNghiep_Group04\\DoanhNghiep_Group04.csproj|solutionrelative:doanhnghiep_group04\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD0C80C-5ED4-4BB5-AA91-5E033E66472B}|DoanhNghiep_Group04\\DoanhNghiep_Group04.csproj|d:\\project\\phantichthietke\\doanhnghiep_group04\\doanhnghiep_group04\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EDD0C80C-5ED4-4BB5-AA91-5E033E66472B}|DoanhNghiep_Group04\\DoanhNghiep_Group04.csproj|solutionrelative:doanhnghiep_group04\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD0C80C-5ED4-4BB5-AA91-5E033E66472B}|DoanhNghiep_Group04\\DoanhNghiep_Group04.csproj|d:\\project\\phantichthietke\\doanhnghiep_group04\\doanhnghiep_group04\\data\\nhanviendata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD0C80C-5ED4-4BB5-AA91-5E033E66472B}|DoanhNghiep_Group04\\DoanhNghiep_Group04.csproj|solutionrelative:doanhnghiep_group04\\data\\nhanviendata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD0C80C-5ED4-4BB5-AA91-5E033E66472B}|DoanhNghiep_Group04\\DoanhNghiep_Group04.csproj|d:\\project\\phantichthietke\\doanhnghiep_group04\\doanhnghiep_group04\\model\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD0C80C-5ED4-4BB5-AA91-5E033E66472B}|DoanhNghiep_Group04\\DoanhNghiep_Group04.csproj|solutionrelative:doanhnghiep_group04\\model\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Project\\PhanTichThietKe\\DoanhNghiep_Group04\\DoanhNghiep_Group04\\Form1.cs",
+              "RelativeDocumentMoniker": "DoanhNghiep_Group04\\Form1.cs",
+              "ToolTip": "D:\\Project\\PhanTichThietKe\\DoanhNghiep_Group04\\DoanhNghiep_Group04\\Form1.cs",
+              "RelativeToolTip": "DoanhNghiep_Group04\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T06:17:57.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Database.cs",
+              "DocumentMoniker": "D:\\Project\\PhanTichThietKe\\DoanhNghiep_Group04\\DoanhNghiep_Group04\\Data\\Database.cs",
+              "RelativeDocumentMoniker": "DoanhNghiep_Group04\\Data\\Database.cs",
+              "ToolTip": "D:\\Project\\PhanTichThietKe\\DoanhNghiep_Group04\\DoanhNghiep_Group04\\Data\\Database.cs",
+              "RelativeToolTip": "DoanhNghiep_Group04\\Data\\Database.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T06:00:46.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NhanVienData.cs",
+              "DocumentMoniker": "D:\\Project\\PhanTichThietKe\\DoanhNghiep_Group04\\DoanhNghiep_Group04\\Data\\NhanVienData.cs",
+              "RelativeDocumentMoniker": "DoanhNghiep_Group04\\Data\\NhanVienData.cs",
+              "ToolTip": "D:\\Project\\PhanTichThietKe\\DoanhNghiep_Group04\\DoanhNghiep_Group04\\Data\\NhanVienData.cs",
+              "RelativeToolTip": "DoanhNghiep_Group04\\Data\\NhanVienData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T05:59:32.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NhanVien.cs",
+              "DocumentMoniker": "D:\\Project\\PhanTichThietKe\\DoanhNghiep_Group04\\DoanhNghiep_Group04\\Model\\NhanVien.cs",
+              "RelativeDocumentMoniker": "DoanhNghiep_Group04\\Model\\NhanVien.cs",
+              "ToolTip": "D:\\Project\\PhanTichThietKe\\DoanhNghiep_Group04\\DoanhNghiep_Group04\\Model\\NhanVien.cs",
+              "RelativeToolTip": "DoanhNghiep_Group04\\Model\\NhanVien.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T05:56:56.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Project\\PhanTichThietKe\\DoanhNghiep_Group04\\DoanhNghiep_Group04\\Form1.cs",
+              "RelativeDocumentMoniker": "DoanhNghiep_Group04\\Form1.cs",
+              "ToolTip": "D:\\Project\\PhanTichThietKe\\DoanhNghiep_Group04\\DoanhNghiep_Group04\\Form1.cs [Design]",
+              "RelativeToolTip": "DoanhNghiep_Group04\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T05:55:12.658Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
