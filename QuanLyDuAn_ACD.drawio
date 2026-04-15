@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Trang-1" id="-kz-oQGvAVrzE52uZeR-">
-    <mxGraphModel dx="1489" dy="863" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="924" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -327,6 +327,15 @@
         <mxCell id="kWs-W5MFX_koCJYWvEWD-3" connectable="0" parent="lEfK6LuO5kxAbOjtI8zw-28" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="tạo dự án" vertex="1">
           <mxGeometry relative="1" x="0.5932" y="-1" as="geometry">
             <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YM8tjo0whcFsY5TYRuVN-1" parent="lEfK6LuO5kxAbOjtI8zw-106" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="495" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="YM8tjo0whcFsY5TYRuVN-2" edge="1" parent="lEfK6LuO5kxAbOjtI8zw-106" source="EhSbK2s6VxPTo3Qjzm5z-10" style="html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="YM8tjo0whcFsY5TYRuVN-1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="210" as="sourcePoint" />
+            <mxPoint x="650" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="EhSbK2s6VxPTo3Qjzm5z-14" edge="1" parent="1" source="lEfK6LuO5kxAbOjtI8zw-40" style="html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="EhSbK2s6VxPTo3Qjzm5z-16" value="">
