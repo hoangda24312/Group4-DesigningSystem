@@ -1,6 +1,6 @@
 ﻿namespace DoanhNghiep_Group04
 {
-    partial class Form1
+    partial class DangNhap
     {
         /// <summary>
         ///  Required designer variable.

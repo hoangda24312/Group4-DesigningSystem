@@ -15,7 +15,7 @@ namespace DoanhNghiep_Group04.Data
             using(MySqlConnection conn = Database.GetConnection())
             {
                 conn.Open();
-                string query = "Insert into Employee (ma_employee,ten_employee,ngay_sinh,dia_chi,ma_baohiem,ma_phongban,ma_hopdong,trang_thai,ma_chucvu,path_anh)" +
+                string query = @"Insert into Employee (ma_employee,ten_employee,ngay_sinh,dia_chi,ma_baohiem,ma_phongban,ma_hopdong,trang_thai,ma_chucvu,path_anh)" +
                     "values (@id,@ten,@ngay,@dia,@ma_baohiem,@ma_phongban,@ma_hopdong,@trang_thai,@ma_chucvu,@path_anh)";
                 using(MySqlCommand cmd = new MySqlCommand(query,conn))
                 {
@@ -75,7 +75,7 @@ namespace DoanhNghiep_Group04.Data
             using(MySqlConnection conn = Database.GetConnection())
             {
                 conn.Open();
-                string query = "Delete from Employee where ma_employee = @id";
+                string query = @"Delete from Employee where ma_employee = @id";
                 using(MySqlCommand cmd = new MySqlCommand(query,conn))
                 {
                     cmd.Parameters.AddWithValue("@id", id);
@@ -84,31 +84,67 @@ namespace DoanhNghiep_Group04.Data
             }
         }
 
-        public void UpdateEmployee(Employee e)
+        public void UpdateEmployee(Employee e,Employee e_manager)
         {
-            using(MySqlConnection conn = Database.GetConnection())
+            using (MySqlConnection conn = Database.GetConnection())
             {
                 conn.Open();
-                string query = "Update from Employee" +
-                    "ten_employee = @ten,ngay_sinh = @ngay,dia_chi = @dia,ma_baohiem = @ma_baohiem," +
-                    "ma_phongban = @ma_phongban,ma_hopdong = @ma_hopdong,trang_thai = @trang_thai," +
-                    "ma_chucvu = @ma_chucvu,path_anh = @path_anh" +
-                    "where ma_employee = @id";
-                using(MySqlCommand cmd = new MySqlCommand(query,conn))
+
+                using (MySqlTransaction tran = conn.BeginTransaction())
                 {
-                    cmd.Parameters.AddWithValue("@id", e.ma_employee);
-                    cmd.Parameters.AddWithValue("@ten", e.ten_employee);
-                    cmd.Parameters.AddWithValue("@ngay", e.ngay_sinh);
-                    cmd.Parameters.AddWithValue("@dia", e.dia_chi);
-                    cmd.Parameters.AddWithValue("@ma_baohiem", e.ma_baohiem);
-                    cmd.Parameters.AddWithValue("@ma_phongban", e.ma_phongban);
-                    cmd.Parameters.AddWithValue("@ma_hopdong", e.ma_hopdong);
-                    cmd.Parameters.AddWithValue("@trang_thai", e.trang_thai);
-                    cmd.Parameters.AddWithValue("@ma_chucvu", e.ma_chucvu);
-                    cmd.Parameters.AddWithValue("@path_anh", e.path_anh);
-                    cmd.ExecuteNonQuery();
+                    try
+                    {
+                        // 1. UPDATE Employee
+                        string updateQuery = @"UPDATE Employee SET 
+                ten_employee = @ten,
+                ngay_sinh = @ngay,
+                dia_chi = @dia,
+                ma_baohiem = @ma_baohiem,
+                ma_phongban = @ma_phongban,
+                ma_hopdong = @ma_hopdong,
+                trang_thai = @trang_thai,
+                ma_chucvu = @ma_chucvu,
+                path_anh = @path_anh
+                WHERE ma_employee = @id";
+
+                        MySqlCommand cmd = new MySqlCommand(updateQuery, conn, tran);
+
+                        cmd.Parameters.AddWithValue("@id", e.ma_employee);
+                        cmd.Parameters.AddWithValue("@ten", e.ten_employee);
+                        cmd.Parameters.AddWithValue("@ngay", e.ngay_sinh);
+                        cmd.Parameters.AddWithValue("@dia", e.dia_chi);
+                        cmd.Parameters.AddWithValue("@ma_baohiem", e.ma_baohiem);
+                        cmd.Parameters.AddWithValue("@ma_phongban", e.ma_phongban);
+                        cmd.Parameters.AddWithValue("@ma_hopdong", e.ma_hopdong);
+                        cmd.Parameters.AddWithValue("@trang_thai", e.trang_thai);
+                        cmd.Parameters.AddWithValue("@ma_chucvu", e.ma_chucvu);
+                        cmd.Parameters.AddWithValue("@path_anh", e.path_anh);
+
+                        cmd.ExecuteNonQuery();
+
+                        string logQuery = @"INSERT INTO Log (ma_employee, hanhdong, entity, ma_entity, thoi_gian)
+                                VALUES (@id, @hanhdong, @entity, @ma_entity, NOW())";
+
+                        MySqlCommand logCmd = new MySqlCommand(logQuery, conn, tran);
+
+                        logCmd.Parameters.AddWithValue("@hanhdong", "Update");
+                        logCmd.Parameters.AddWithValue("@id", e_manager.ma_employee);
+                        logCmd.Parameters.AddWithValue("@entity", "Employee");
+                        logCmd.Parameters.AddWithValue("ma_entity", e.ma_employee);
+
+                        logCmd.ExecuteNonQuery();
+
+                        // 3. COMMIT
+                        tran.Commit();
+                    }
+                    catch (Exception)
+                    {
+                        // 4. ROLLBACK if error
+                        tran.Rollback();
+                        throw;
+                    }
                 }
             }
+
         }
     }
-}
