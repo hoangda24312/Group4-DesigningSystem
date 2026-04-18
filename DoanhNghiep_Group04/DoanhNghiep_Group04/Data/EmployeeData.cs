@@ -43,6 +43,8 @@ namespace DoanhNghiep_Group04.Data
                         log_cmd.Parameters.AddWithValue("@entity", "Employee");
                         log_cmd.Parameters.AddWithValue("ma_entity", e.ma_employee);
 
+                        log_cmd.ExecuteNonQuery();
+
                         trann.Commit();
                     }
                     catch(Exception)
