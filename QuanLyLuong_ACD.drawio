@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Trang-1" id="zUArC-Tkl2PYuAmhe3g2">
-    <mxGraphModel dx="1411" dy="818" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1914" dy="1110" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -249,6 +249,12 @@
           <mxGeometry relative="1" x="-1" as="geometry">
             <mxPoint x="520" y="430" as="sourcePoint" />
             <mxPoint x="570" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WLpYQSKq4Tcm_iUpxK9N-1" edge="1" parent="c-vxcbgXy-PSu0eeMKPU-50" source="c-vxcbgXy-PSu0eeMKPU-27" style="html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" target="c-vxcbgXy-PSu0eeMKPU-32" value="không">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="110" y="590" as="sourcePoint" />
+            <mxPoint x="175" y="630" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Zijlwn9-MCsHB-pXshU6-8" edge="1" parent="1" source="c-vxcbgXy-PSu0eeMKPU-23" style="html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" target="Zijlwn9-MCsHB-pXshU6-4" value="hợp lệ">
