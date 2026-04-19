@@ -15,8 +15,8 @@ namespace DoanhNghiep_Group04.Data
             using (MySqlConnection conn = Database.GetConnection())
             {
                 conn.Open();
-                string query = @"Insert into Employee (ma_employee,ten_employee,ngay_sinh,dia_chi,ma_baohiem,ma_phongban,ma_hopdong,trang_thai,ma_chucvu,path_anh) 
-                    values (@id,@ten,@ngay,@dia,@ma_baohiem,@ma_phongban,@ma_hopdong,@trang_thai,@ma_chucvu,@path_anh)";
+                string query = @"Insert into Employee (ma_employee,ten_employee,ngay_sinh,dia_chi,ma_baohiem,ma_phongban,ma_hopdong,trang_thai,ma_chucvu,path_anh, so_ngay_nghi) 
+                    values (@id,@ten,@ngay,@dia,@ma_baohiem,@ma_phongban,@ma_hopdong,@trang_thai,@ma_chucvu,@path_anh, @so_ngay)";
                 using (MySqlTransaction trann = conn.BeginTransaction())
                 {
                     try
@@ -32,6 +32,7 @@ namespace DoanhNghiep_Group04.Data
                         cmd.Parameters.AddWithValue("@trang_thai", e.trang_thai);
                         cmd.Parameters.AddWithValue("@ma_chucvu", e.ma_chucvu);
                         cmd.Parameters.AddWithValue("@path_anh", e.path_anh);
+                        cmd.Parameters.AddWithValue("@so_ngay", e.so_ngay_nghi);
                         cmd.ExecuteNonQuery();
 
 
@@ -81,6 +82,7 @@ namespace DoanhNghiep_Group04.Data
                         e.trang_thai = Convert.ToBoolean(reader["trang_thai"]);
                         e.ma_chucvu = reader["ma_chucvu"].ToString();
                         e.path_anh = reader["path_anh"].ToString();
+                        e.so_ngay_nghi = Convert.ToInt32(reader["so_ngay_nghi"]);
                         return e;
                     }
                     else
@@ -128,6 +130,7 @@ namespace DoanhNghiep_Group04.Data
                 trang_thai = @trang_thai,
                 ma_chucvu = @ma_chucvu,
                 path_anh = @path_anh
+                so_ngay_nghi = @so_ngay
                 WHERE ma_employee = @id";
 
                         MySqlCommand cmd = new MySqlCommand(updateQuery, conn, tran);
@@ -142,6 +145,7 @@ namespace DoanhNghiep_Group04.Data
                         cmd.Parameters.AddWithValue("@trang_thai", e.trang_thai);
                         cmd.Parameters.AddWithValue("@ma_chucvu", e.ma_chucvu);
                         cmd.Parameters.AddWithValue("@path_anh", e.path_anh);
+                        cmd.Parameters.AddWithValue("@so_ngay", e.so_ngay_nghi);
 
                         cmd.ExecuteNonQuery();
 

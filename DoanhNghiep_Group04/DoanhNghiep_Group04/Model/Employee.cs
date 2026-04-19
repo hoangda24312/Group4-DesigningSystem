@@ -16,5 +16,7 @@ namespace DoanhNghiep_Group04.Model
         public bool trang_thai { get; set; }
         public string ma_chucvu { get; set; }
         public string path_anh { get; set; }
+
+        public int so_ngay_nghi { set; get; }
     }
 }

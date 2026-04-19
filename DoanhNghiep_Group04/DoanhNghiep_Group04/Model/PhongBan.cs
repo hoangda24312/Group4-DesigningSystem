@@ -10,5 +10,7 @@ namespace DoanhNghiep_Group04.Model
         public string ten_phongban { set; get; }
         public string sdt { set; get; }
         public string ma_manager { set; get; }
+
+        public bool trang_thai { set; get; }
     }
 }

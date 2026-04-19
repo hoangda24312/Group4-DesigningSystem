@@ -17,13 +17,14 @@ namespace DoanhNghiep_Group04.Data
                 {
                     try
                     {
-                        string query = @"Insert into ma_phongban, ten_phongban, sdt, ma_manager
-                    VALUES (@id_pb,@ten,@sdt,@id_e)";
+                        string query = @"Insert into ma_phongban, ten_phongban, sdt, ma_manager,trang_thai
+                    VALUES (@id_pb,@ten,@sdt,@id_e, @status)";
                         MySqlCommand cmd = new MySqlCommand(query, conn, trann);
                         cmd.Parameters.AddWithValue("@id_pb", pb.ma_phongban);
                         cmd.Parameters.AddWithValue("@ten", pb.ten_phongban);
                         cmd.Parameters.AddWithValue("@sdt", pb.sdt);
                         cmd.Parameters.AddWithValue("@id_e", pb.ma_manager);
+                        cmd.Parameters.AddWithValue("@status", pb.trang_thai);
                         cmd.ExecuteNonQuery();
 
                         string log_query = @"INSERT INTO Log (ma_employee, hanhdong, entity, ma_entity, thoi_gian)
@@ -61,11 +62,12 @@ namespace DoanhNghiep_Group04.Data
                     try
                     {
                         string query = @"Update PhongBan set
-                        ten_phongban = @ten, sdt = @sdt, ma_manager = @id_e";
+                        ten_phongban = @ten, sdt = @sdt, ma_manager = @id_e, trang_thai = @status";
                         MySqlCommand cmd = new MySqlCommand(query, conn, trann);
                         cmd.Parameters.AddWithValue("@ten", pb.ten_phongban);
                         cmd.Parameters.AddWithValue("@sdt", pb.sdt);
                         cmd.Parameters.AddWithValue("@id_e", pb.ma_manager);
+                        cmd.Parameters.AddWithValue("@status", pb.trang_thai);
                         cmd.ExecuteNonQuery();
 
                         string log_query = @"INSERT INTO Log (ma_employee, hanhdong, entity, ma_entity, thoi_gian)
@@ -90,6 +92,32 @@ namespace DoanhNghiep_Group04.Data
 
         }
 
+
+        public static List<PhongBan> GetDanhSach(string ma_phongban)
+        {
+            List<PhongBan> danh_sach = new List<PhongBan>();
+            using (MySqlConnection conn = Database.GetConnection())
+            {
+                conn.Open();
+                string query = @"Select * from
+                PhongBan where ma_phongban = @id";
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", ma_phongban);
+                    var reader = cmd.ExecuteReader();
+                    while(reader.Read())
+                    {
+                        PhongBan pb = new PhongBan();
+                        pb.ma_phongban = ma_phongban;
+                        pb.ten_phongban = reader["ten_phongban"].ToString();
+                        pb.ma_manager = reader["ma_manager"].ToString();
+                        pb.trang_thai = Convert.ToBoolean(reader["trang_thai"]);
+                        danh_sach.Add(pb);
+                    }
+                }
+            }
+            return danh_sach;
+        }
 
 
 
