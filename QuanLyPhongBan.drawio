@@ -27,7 +27,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="O9yDsXPoj10huU_4kP5o-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Xem danh sách nhân viên phòng ban" vertex="1">
+        <mxCell id="O9yDsXPoj10huU_4kP5o-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Xem danh sách quản lý phòng ban" vertex="1">
           <mxGeometry height="55" width="125" x="635" y="60" as="geometry" />
         </mxCell>
         <mxCell id="O9yDsXPoj10huU_4kP5o-11" edge="1" parent="1" source="O9yDsXPoj10huU_4kP5o-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=open;endFill=0;dashed=1;" target="zEu6X0I6YXEKoFtpOIC7-6">

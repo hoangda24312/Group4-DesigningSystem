@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="ACD-QuanLyPhongBan" id="acd-qlpb">
-    <mxGraphModel dx="1914" dy="1110" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1411" dy="818" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -52,7 +52,7 @@
             <mxPoint x="640" y="450" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ffLXrqx0ojAhLa44UCjr-12" connectable="0" parent="ffLXrqx0ojAhLa44UCjr-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="xem danh sách nhân viên phòng ban" vertex="1">
+        <mxCell id="ffLXrqx0ojAhLa44UCjr-12" connectable="0" parent="ffLXrqx0ojAhLa44UCjr-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="xem danh sách quản lý phòng ban" vertex="1">
           <mxGeometry relative="1" x="0.0087" y="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
