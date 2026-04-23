@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Trang-1" id="jmqbNPuXsltq0Qn10IqQ">
-    <mxGraphModel dx="893" dy="518" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1411" dy="818" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -276,9 +276,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="lYZ9F0pHQjCYExmWySTz-175" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=13;" value="21:Nhập thông tin bảo hiểm" vertex="1">
-          <mxGeometry height="30" width="250" x="115" y="950" as="geometry" />
+          <mxGeometry height="30" width="250" x="140" y="950" as="geometry" />
         </mxCell>
-        <mxCell id="lYZ9F0pHQjCYExmWySTz-176" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=13;" value="&lt;b&gt;[Tạo bảo hiểm]&lt;/b&gt;" vertex="1">
+        <mxCell id="lYZ9F0pHQjCYExmWySTz-176" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=10;" value="&lt;b&gt;[Tạo bảo hiểm]&lt;/b&gt;" vertex="1">
           <mxGeometry height="30" width="140" x="50" y="950" as="geometry" />
         </mxCell>
         <mxCell id="lYZ9F0pHQjCYExmWySTz-182" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=5;entryPerimeter=0;fontSize=13;" target="lYZ9F0pHQjCYExmWySTz-188" value="">
